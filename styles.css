@@ -216,7 +216,7 @@ body {
     width: 100%;
   }
   .input-texto {
-    height: 70%;
+    height: 60%;
   }
   .btn-criptografar,
   .btn-decriptografar {
@@ -234,7 +234,7 @@ body {
   .container-resultado {
     width: 100%;
     margin-top: 0;
-    height: auto;
+    height: 30%;
   }
 
   .texto-criptografado {
