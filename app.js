@@ -1,6 +1,6 @@
 const padraoResultado = `
 <div class="padrao">
-  <img src="./assets/messageNotFound.svg" alt="" />
+  <img class="msg-nao-encontrada-img" src="./assets/messageNotFound.svg" alt="" />
   <span class="msg-nao-encontrada">Nenhuma mensagem encontrada</span>
   <span class="sub-msg-nao-encontrada">
     digite um texto que você deseja criptografar ou descriptografar.
@@ -71,6 +71,7 @@ function mostrarResultado(texto) {
   `;
   botaoCopiar = document.querySelector('.btn-copy');
   botaoCopiar.addEventListener('click', copiarTexto);
+  ajustarAlturaTextarea(document.querySelector('.texto-criptografado'));
 }
 
 function copiarTexto() {
@@ -84,4 +85,9 @@ function copiarTexto() {
   resultado.innerHTML = padraoResultado;
   entrada.focus();
   entrada.value = '';
+}
+
+function ajustarAlturaTextarea(elemento) {
+  elemento.style.height = 'auto';
+  elemento.style.height = elemento.scrollHeight + 'px';
 }
