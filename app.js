@@ -83,7 +83,6 @@ function copiarTexto() {
     botaoCopiar = null;
   }
   resultado.innerHTML = padraoResultado;
-  entrada.focus();
   entrada.value = '';
 }
 
